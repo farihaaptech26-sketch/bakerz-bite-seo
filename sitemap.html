@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meta description  -->
+    <meta name="description" content="Visit Bakerz Bite siteMap to get delicious cakes, cupcakes, coffee, pastries,savouries, with offers.">
+
+    <!-- meta robot  -->
+    <meta name="robots" content="index, follow">
+
+    <!-- meta author  -->
+    <meta name="author" content="Bakerz Bite">
+
+    <title>Bakerz Bite Site Map</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="Material/logo with bg.png" type="image/x-icon">
+
+    <!-- Bs Cdn Css V 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- fontawesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+        integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel="canonical"
+    href="https://farihaaptech26-sketch.github.io/Bakerz-Bite/sitemap.html">
+
+    <!-- css link  -->
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+    <header>
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <p>Now Delivering in Karachi!</p>
+
+        </div>
+        <!-- Navbar -->
+        <nav class="navitem">
+            <div class="nav-left">
+
+                <!--  LOCATION  -->
+                <div class="location" onclick="openLocationPopup()">
+
+                    <div class="location-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+
+                    <div class="location-content">
+                        <span class="location-title">DELIVERY</span>
+                        <span id="display">Select Location</span>
+                    </div>
+
+                    <div class="location-arrow">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+
+                </div>
+
+                <!--  LOCATION POPUP -->
+
+                <div class="location-popup" id="locationPopup">
+
+                    <div class="location-modal">
+
+                        <!-- Close Button -->
+                        <button class="close-location" onclick="closeLocationPopup()">
+                            &times;
+                        </button>
+
+
+                        <!-- Logo -->
+                        <div class="popup-logo-box">
+                            <img src="Material/logo.png" alt="Bakerz Bite">
+                        </div>
+
+
+                        <!-- Heading -->
+                        <h2>Select Your Order Type</h2>
+
+                        <!-- Delivery / Pick-Up -->
+                        <div class="order-type">
+
+                            <button class="order-btn active" id="deliveryBtn">
+                                Delivery
+                            </button>
+
+                            <button class="order-btn" id="pickupBtn">
+                                Pick-Up
+                            </button>
+
+                        </div>
+
+
+                        <!-- Location Text -->
+                        <p class="location-question">
+                            Please select your location
+                        </p>
+
+
+                        <!-- City -->
+                        <label for="citySelect">
+                            City
+                        </label>
+
+                        <input type="text" value="Karachi" disabled class="popup-select">
+
+
+                        <!-- Area -->
+                        <label for="areaSelect">
+                            Please select your area
+                        </label>
+
+                        <select id="areaSelect" class="popup-select">
+
+                            <option value="">
+                                Select Location
+                            </option>
+
+                        </select>
+
+
+                        <!-- Select Button -->
+                        <button class="select-location-btn" onclick="confirmLocation()">
+                            Select
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- Call & Order -->
+                <div class="call text">
+                    <div class="call-icon"> <i class="fa-solid fa-phone"></i> </div>030-012-345-67
+                </div>
+            </div>
+
+            <!-- Logo -->
+            <a href="index.html" class="navlogo"><img src="Material/logo.png" alt="Bakerz Bite logo"></a>
+            <!-- Visitor Counter -->
+            <div class="nav-right">
+                <div class="visitor "> <i class="fa-regular fa-user vc"></i><span id="counter">1204</span> </div>
+
+                <!-- Cart -->
+                <div class="cart"><i class="fa-solid fa-cart-shopping"></i>
+                    <span id="cart-count">0</span>
+                </div>
+
+                <!-- Menu Button -->
+                <button class="menu-btn" id="menuBtn" onclick="toggleMenu()">☰</button>
+            </div>
+
+
+            <div class="nav-menu" id="navMenu">
+
+                <!-- Close Button -->
+                <button class="close-btn" onclick="toggleMenu()">×</button>
+
+
+                <a href="index.html">Home</a>
+                <a href="index.html#merchandise">Merchandise</a>
+                <a href="index.html#offers">Offers</a>
+                <a href="About.html#gallery">Gallery</a>
+                <a href="About.html">About Us</a>
+                <a href="contact.html#faq">FAQ</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="sitemap.html">Site map</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sitemap Section -->
+    <main class="sitemap-section">
+
+        <div class="sitemap-container">
+
+            <!-- Page Heading -->
+            <div class="sitemap-heading">
+                <span class="sitemap-subtitle">EXPLORE BAKERZ BITE</span>
+                <h1>Website Sitemap</h1>
+                <p>
+                   you can find everything you are looking for on Bakerz bite.
+                    Explore our pages and discover more about us.
+                </p>
+            </div>
+
+            <!-- Sitemap Links -->
+            <div class="sitemap-grid">
+
+                <!-- Main Pages -->
+                <div class="sitemap-card">
+                    <div class="sitemap-icon">
+                        <i class="fa-solid fa-house"></i>
+                    </div>
+                    <h2>Main Pages</h2>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="About.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Shopping & Products -->
+                <div class="sitemap-card">
+                    <div class="sitemap-icon">
+                        <i class="fa-solid fa-cake-candles"></i>
+                    </div>
+                    <h2>Explore & Shop</h2>
+                    <ul>
+                        <li><a href="index.html#home">Our Bakery</a></li>
+                        <li><a href="index.html#categoryFilter">Categories</a></li>
+                        <li><a href="index.html#merchandise">Merchandise</a></li>
+                        <li><a href="index.html#offers">Special Offers</a></li>
+                    </ul>
+                </div>
+                <!-- Bakery Categories -->
+                <div class="sitemap-card">
+                    <div class="sitemap-icon">
+                        <i class="fa-solid fa-cookie-bite"></i>
+                    </div>
+                    <h2>Our Bakery Categories</h2>
+                    <ul>
+                        <li><a href="index.html#cake">Cakes</a></li>
+                        <li><a href="index.html#coffee">Coffees</a></li>
+                        <li><a href="index.html#customized">Customized Cakes</a></li>
+                        <li><a href="index.html#savory">Savouries</a></li>
+                        <li><a href="index.html#brownies">Cupcakes</a></li>
+                        <li><a href="index.html#shake">Shakes</a></li>
+                    </ul>
+                </div>
+
+                <!-- About & Gallery -->
+                <div class="sitemap-card">
+                    <div class="sitemap-icon">
+                        <i class="fa-solid fa-images"></i>
+                    </div>
+                    <h2>Discover More</h2>
+                    <ul>
+                        <li><a href="About.html#gallery">Our Gallery</a></li>
+                        <li><a href="About.html">Our Story</a></li>
+                    </ul>
+                </div>
+
+                <!-- Customer Support -->
+                <div class="sitemap-card">
+                    <div class="sitemap-icon">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <h2>Customer Support</h2>
+                    <ul>
+                        <li><a href="contact.html">Get in Touch</a></li>
+                        <li><a href="contact.html#faq">Frequently Asked Questions</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Extra Information -->
+            <div class="sitemap-bottom">
+                <h2>Need Something Special? </h2>
+                <p>
+                  We would love to make delicious baked treats just the way you like them.
+                </p>
+                <a href="contact.html" class="sitemap-btn">
+                    Contact Us <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+
+        <div class="container py-5">
+
+            <div class="row">
+
+                <!-- Bakerz Bite -->
+                <div class="col-md-3 footer-brand">
+                    <div class="footer-logo"> <img src="Material/logo.png" alt="bakerz bite logo"></div>
+                    <p>Freshly baked cakes, pastries, cookies and more.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-3">
+                    <h5>Quick Links</h5>
+
+                    <a href="index.html">Home</a><br>
+                    <a href="index.html#categoryFilter">Categories</a><br>
+                    <a href="index.html#offers">Offers</a><br>
+                    <a href="About.html#gallery">Gallery</a><br>
+                    <a href="About.html#about">About Us</a><br>
+                    <a href="contact.html">Contact Us</a><br>
+                    <a href="sitemap.html">Site Map</a>
+
+                </div>
+
+                <!-- Contact Us -->
+                <div class="col-md-3">
+                    <h5>Contact Us</h5>
+
+                    <p><i class="fa-solid fa-phone"></i> 030-012-345-67</p>
+                    <p><i class="fa-solid fa-envelope"></i> info@bakerzbite.com</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Karachi, Pakistan</p>
+                </div>
+
+                <!-- Follow Us -->
+                <div class="col-md-3">
+                    <h5>Follow Us</h5>
+
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-instagram ms-3"></i>
+                    </a>
+
+                    <a href="https://wa.me/923001234567" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-whatsapp ms-3"></i>
+                    </a>
+                </div>
+
+            </div>
+
+
+
+            <div class="ticker">
+                <div class="ticker-content" id="tickerContent">
+                    <i class="fa-regular fa-calendar-days"></i> Date: <span id="currentDate"></span>
+                    &nbsp;&nbsp; | &nbsp;&nbsp;
+                    <i class="fa-regular fa-clock"></i> Time: <span id="currentTime"></span>
+                    &nbsp;&nbsp; | &nbsp;&nbsp;
+                    <i class="fa-solid fa-location-dot"></i>Location: <span id="location">Getting location...</span>
+                </div>
+            </div>
+            <hr>
+            <div class="copyright">
+                <p><i class="fa-regular fa-copyright"></i>2026 Bakerz Bite. All Rights Reserved.</p>
+            </div>
+
+
+        </div>
+    </footer>
+
+    <!-- Jquery link cdn -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
+        integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+        integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $('#counter').counterUp();
+    </script>
+
+    <!-- Bs Cdn Js V 5.3 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <!-- js link  -->
+    <script src="script.js"></script>
+</body>
+
+</html>

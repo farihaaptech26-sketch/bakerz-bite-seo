@@ -1,0 +1,255 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | Bakerz Bite</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --background-color--: #fff8ed;
+            --gold: #DEA347;
+            --light-purple: #d8a7ff;
+            --cream: #fff0df;
+            --hover: #511d53;
+            --white--: #ffffff;
+            --nav-bg: #3b123c;
+            --text-color--: #3b123c;
+            --purple: #6f3fa8;
+            --text-color: #120b18;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: var(--background-color--);
+            color: var(--text-color--);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .error-section {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Decorative circles */
+
+        .circle {
+            position: absolute;
+            border-radius: 50%;
+            background: var(--light-purple);
+            opacity: 0.25;
+            z-index: 0;
+        }
+
+        .circle-one {
+            width: 250px;
+            height: 250px;
+            top: -80px;
+            left: -80px;
+        }
+
+        .circle-two {
+            width: 180px;
+            height: 180px;
+            bottom: -50px;
+            right: -40px;
+            background: var(--gold);
+        }
+
+        .circle-three {
+            width: 100px;
+            height: 100px;
+            top: 15%;
+            right: 12%;
+        }
+
+        .error-content {
+            text-align: center;
+            max-width: 700px;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Logo */
+
+        .logo {
+            font-size: 30px;
+            font-weight: 800;
+            color: var(--nav-bg);
+            margin-bottom: 25px;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: var(--gold);
+        }
+
+        /* Bakery illustration */
+
+        .illustration {
+            font-size: 85px;
+            margin-bottom: 5px;
+            animation: floating 3s ease-in-out infinite;
+        }
+
+        /* 404 */
+
+        .error-number {
+            font-size: clamp(110px, 22vw, 190px);
+            font-weight: 800;
+            line-height: 1;
+            color: var(--nav-bg);
+            letter-spacing: 8px;
+            text-shadow: 7px 7px 0 var(--gold);
+            margin: 10px 0 20px;
+        }
+
+        .error-content h1 {
+            font-size: clamp(23px, 4vw, 35px);
+            font-weight: 700;
+            color: var(--text-color--);
+            margin-bottom: 15px;
+        }
+
+        .error-content p {
+            font-size: 15px;
+            color: #66566b;
+            line-height: 1.9;
+            max-width: 530px;
+            margin: 0 auto 30px;
+        }
+
+        /* Button */
+
+        .home-btn {
+            display: inline-block;
+            text-decoration: none;
+            background: var(--nav-bg);
+            color: var(--white--);
+            padding: 15px 35px;
+            border-radius: 50px;
+            font-size: 15px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 18px rgba(59, 18, 60, 0.2);
+        }
+
+        .home-btn:hover {
+            background: var(--gold);
+            color: var(--nav-bg);
+            transform: translateY(-5px);
+        }
+
+        /* Footer */
+
+        .footer {
+            margin-top: 45px;
+            color: #8c788b;
+            font-size: 12px;
+        }
+
+        .footer span {
+            color: var(--gold);
+        }
+
+        /* Animation */
+
+        @keyframes floating {
+            0%, 100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+
+        /* Responsive */
+
+        @media (max-width: 576px) {
+            .error-section {
+                padding: 25px 15px;
+            }
+
+            .logo {
+                font-size: 25px;
+            }
+
+            .illustration {
+                font-size: 65px;
+            }
+
+            .error-number {
+                letter-spacing: 3px;
+                text-shadow: 4px 4px 0 var(--gold);
+            }
+
+            .error-content p {
+                font-size: 13px;
+            }
+
+            .home-btn {
+                padding: 13px 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="error-section">
+
+        <div class="circle circle-one"></div>
+        <div class="circle circle-two"></div>
+        <div class="circle circle-three"></div>
+
+        <div class="error-content">
+
+            <div class="logo">
+                Bakerz <span>Bite.</span>
+            </div>
+
+            <div class="illustration">🧁</div>
+
+            <div class="error-number">404</div>
+
+            <h1>Oops! You're Lost in the Bakery!</h1>
+
+            <p>
+                Oh no! It looks like the page you're searching for
+                has disappeared like freshly baked cookies.
+                Don't worry, let's get you back to something sweet!
+            </p>
+
+            <a href="index.html" class="home-btn">
+                <i>←</i> Back to Home
+            </a>
+
+            <div class="footer">
+                © 2026 <strong>Bakerz Bite</strong>.
+                Baked with <span>♥</span> and love.
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+</html>
+
