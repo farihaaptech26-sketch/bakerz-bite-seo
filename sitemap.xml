@@ -1,25 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://farihaaptech26-sketch.github.io/bakerz-bite-seo/</loc>
+    <lastmod>2026-11-04T13:35:38+00:00</lastmod>
+    <priority>1.0</priority>
+  </url>
 
   <url>
-       <loc>https://farihaaptech26-sketch.github.io/Bakerz-Bite/</loc>
-       <lastmod>2026-11-04T13:35:38+00:00</lastmod>
-       <priority>1.0000</priority>
+    <loc>https://farihaaptech26-sketch.github.io/bakerz-bite-seo/about.html</loc>
+    <lastmod>2026-11-04T13:35:38+00:00</lastmod>
+    <priority>0.8</priority>
   </url>
+
   <url>
-       <loc>https://farihaaptech26-sketch.github.io/Bakerz-Bite/About.html</loc>
-       <lastmod>2026-11-04T13:35:38+00:00</lastmod>
-       <priority>0.8000</priority>
+    <loc>https://farihaaptech26-sketch.github.io/bakerz-bite-seo/contact.html</loc>
+    <lastmod>2026-11-04T13:35:38+00:00</lastmod>
+    <priority>0.8</priority>
   </url>
+
   <url>
-       <loc>https://farihaaptech26-sketch.github.io/Bakerz-Bite/contact.html</loc>
-       <lastmod>2026-11-04T13:35:38+00:00</lastmod>
-       <priority>0.8000</priority>
+    <loc>https://farihaaptech26-sketch.github.io/bakerz-bite-seo/index.html</loc>
+    <lastmod>2026-11-04T13:35:38+00:00</lastmod>
+    <priority>0.6</priority>
   </url>
-  <url>
-       <loc>https://farihaaptech26-sketch.github.io/Bakerz-Bite/index.html</loc>
-       <lastmod>2026-11-04T13:35:38+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
+
 </urlset>
